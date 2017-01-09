@@ -1,0 +1,19 @@
+{
+  "name": "hiccup.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hiccup.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^15.4.2",
+    "tape": "^4.6.3"
+  }
+}
