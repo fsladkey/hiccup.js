@@ -1,6 +1,6 @@
 const test = require('tape');
 const React = require('react')
-const toReact = require('../lib/toReact')(React);
+const toReact = require('../lib/toReact')(React.createElement);
 
 test('toReact', function (t) {
   const createElement = React.createElement

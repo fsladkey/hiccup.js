@@ -2,7 +2,7 @@ const test = require('tape');
 const toHTML = require('../lib/toHTML');
 
 test('toHTML', function (t) {
-  t.plan(7);
+  t.plan(8);
 
   result = "<h1></h1>"
   t.equal(toHTML(["h1"]), result);
@@ -18,6 +18,9 @@ test('toHTML', function (t) {
 
   result = "<p>text</p>"
   t.looseEqual(toHTML(["p", "text"]), result);
+
+  result = "<br />"
+  t.looseEqual(toHTML(["br"]), result);
 
   result = "<html><h1></h1></html>"
   t.equal(toHTML(
